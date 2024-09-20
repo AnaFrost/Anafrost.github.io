@@ -4,10 +4,10 @@ function App() {
   return (
     <div className='main'>
       <div className='wrapper'>
-        <h2 className='title'>ᛝ День рождения в берлоге эльфа ᛝ</h2>
+        <h1 className='title'>ᛝДень рождения в берлоге эльфаᛝ</h1>
         <div className='dividing-line' />
         <p className='description'>
-          Приглашаю вас на празднование моего 31 дня рождения 02.11 в 13:00.
+          Приглашаю вас на празднование моего 31 дня рождения 02.11 в 13:00
           <br />
           Место проведения: Берлога эльфа
           <br />
@@ -27,11 +27,21 @@ function App() {
           <br />
           Буду рада если вы найдете в своем гардеробе вещи цветов:
           <div className='color-ref'>
-            <div className='color-box gray' />
-            <div className='color-box brown' />
-            <div className='color-box green' />
-            <div className='color-box beige' />
-            <div className='color-box white' />
+            <div className='color-box gray'>
+              <span className='color-badge'>Gray</span>
+            </div>
+            <div className='color-box brown'>
+              <span className='color-badge'>Brown</span>
+            </div>
+            <div className='color-box green'>
+              <span className='color-badge'>Green</span>
+            </div>
+            <div className='color-box beige'>
+              <span className='color-badge'>Baige</span>
+            </div>
+            <div className='color-box white'>
+              <span className='color-badge'>White</span>
+            </div>
           </div>
           <br />
           Точное совпадение не обязательно :)

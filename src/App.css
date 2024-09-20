@@ -6,11 +6,12 @@
 .main {
   display: flex;
   align-items: center;
-  width: 720px;
-  min-width: 430px;
-  height: 100vh;
+  justify-content: center;
+  width: fit-content;
   background-image: url('./images/2024-09-20 17.18.03.jpg');
   background-size: cover;
+  padding: 50px 0;
+  box-sizing: border-box;
 }
 
 .wrapper {
@@ -19,19 +20,17 @@
   align-items: center;
   justify-content: center;
   border-radius: 25px;
-  height: 90%;
   width: 90%;
   background-color: rgba(1, 45, 5, 0.903);
-  margin: 0 auto;
 }
 
 .description {
   font-family: tolkiencyr;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .title {
-  font-size: 28px;
+  font-size: 20px;
 }
 
 .dividing-line {
@@ -43,19 +42,41 @@
 
 .color-ref {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  width: 600px;
-  height: 80px;
-  margin: 20px auto 0;
+  height: 70px;
+  width: 90%;
+  margin: 0 auto;
+  gap: 10px;
   background-color: rgba(208, 249, 182, 0.55);
   border-radius: 25px;
 }
 
 .color-box {
-  width: 65px;
-  height: 65px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
+  cursor: pointer;
+  transition: filter 0.3s ease;
+  position: relative;
+}
+.color-box:hover {
+  filter: brightness(0.9);
+  scale: 1.2;
+}
+
+.color-box .color-badge {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  color: rgb(255, 98, 0);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.color-box:hover .color-badge {
+  opacity: 1;
 }
 
 .green {
